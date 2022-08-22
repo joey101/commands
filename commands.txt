@@ -1,0 +1,24 @@
+
+=========================================XRANDR=================================
+arandr --> activates the gui for the external screens.
+xrandr --> HDMI Application
+
+Sets up both screens with the both being mirrored.
+xrandr --output eDP-1 --auto --output HDMI-1 --auto
+
+Sets up both screens with the extended monitor being on the right hand side.
+xrandr --output eDP-1 --right-of HDMI-1
+
+==============================Media Player======================================
+totem --> Media Player that I LIKE
+
+==============================Matlab============================================
+-softwareopengl  --> put after the matlab code inorder to run animations.
+
+================================To Look at======================================
+I have installed picom for the graphics, and nitrogen for the background. I have 
+also installed TLP for better battery optimisation, none of these programs have 
+been looked into or configured yet.
+- picom
+- nitrogen
+- TLP
