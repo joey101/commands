@@ -1,5 +1,5 @@
 
-=========================================XRANDR=================================
+========================================XRANDR=================================
 arandr --> activates the gui for the external screens.
 xrandr --> HDMI Application
 
@@ -11,14 +11,59 @@ xrandr --output eDP-1 --right-of HDMI-1
 
 ==============================Media Player======================================
 totem --> Media Player that I LIKE
-
+eog --> view images
 ==============================Matlab============================================
 -softwareopengl  --> put after the matlab code inorder to run animations.
 
 ================================To Look at======================================
-I have installed picom for the graphics, and nitrogen for the background. I have 
-also installed TLP for better battery optimisation, none of these programs have 
-been looked into or configured yet.
+I have installed picom for the graphics. I have also installed TLP for better 
+battery optimisation, none of these programs have been looked into or configured yet.
 - picom
-- nitrogen
 - TLP
+
+========================Environment Path=======================================
+The Global environment variables of your system are stored in /etc/environment.
+Any changes here will get reflected throughout the system and will affect all 
+users
+of the system. Also, you need a Reboot, for any changes made here to take effect.
+
+User level Environment variables are mostly stored in .bashrc and .profile files 
+in your Home folder. Changes here only affect that particular user. Just close 
+and open the terminal for configuration changes to take place.
+
+Edit : If you don't want to Reboot or restart your terminal, you can make use 
+of the source command.
+Eg. source /etc/environment or source .bashrc
+
+/etc/profile.d/
+================================================================================
+------------------------------JAVA LOCATIONS------------------------------------
+/usr/lib/java/jdk-17.0.4.1+1
+
+removes duplicate paths in PATH variables
+PATH=$(echo $PATH | awk -v RS=: -v ORS=: '!($0 in a) {a[$0]; print}')
+readlink -f $(which java)
+
+then run this command obviously with your naming conventions. OMIT THE BIN AND JAVA part.
+export PATH=$PATH:/opt/gradle/gradle-7.2/bin
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.16.1.1-1.fc36.x86_64
+===============================================================================
+Linkkk for zsh terminal
+https://ivanaugustobd.medium.com/your-terminal-can-be-much-much-more-productive-5256424658e8
+
+fonts for terminal
+https://www.nerdfonts.com/#downloads
+
+change default terminal
+chsh
+
+
+WEBOTS_CONTROLLER_URL='ipc://1234/e-puck'  ./velocity 
+
+RUN WEBOTS
+docker run -it -e DISPLAY -v  ~/Documents/uni/mtrn2500/mtrn2500-2022t3-ass2:/mnt/ass2  -v /tmp/.X11-unix:/tmp/.X11-unix:rw cyberbotics/webots:R2021b-ubuntu18.04 webots
+
+ctrl+r
+
+
+

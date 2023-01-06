@@ -1,0 +1,23 @@
+===========================Software Testing Learning===========================
+
+Software Developement Life Cycle
+
+- Waterfall
+- Spiral
+- Agile
+
+General Lifecycle -> Planning -> Defining -> Designing -> Building -> Testing -> Deployment
+
+
+2 Types of testing = Manual AND Automated
+
+Manual:
+(Act like the end user and check for abnormal behaviours or bugs)
+- Unit testing
+- Integration Testing 
+- System Testing
+- User Acceptance Testing
+
+
+Automation Testing
+
