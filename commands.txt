@@ -64,6 +64,12 @@ RUN WEBOTS
 docker run -it -e DISPLAY -v  ~/Documents/uni/mtrn2500/mtrn2500-2022t3-ass2:/mnt/ass2  -v /tmp/.X11-unix:/tmp/.X11-unix:rw cyberbotics/webots:R2021b-ubuntu18.04 webots
 
 ctrl+r
+===========================================Power Management for wifi========================================
+Disable Power Management Temporarily
 
+    Open a terminal and run the following command to disable power management for your wireless interface:
 
+    bash
+
+sudo iwconfig wlp0s20f3 power off
 
