@@ -73,3 +73,5 @@ Disable Power Management Temporarily
 
 sudo iwconfig wlp0s20f3 power off
 
+password:
+gODZRABAnwki4crUcUyzMg==
